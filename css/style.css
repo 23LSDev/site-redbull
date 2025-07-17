@@ -1,0 +1,315 @@
+/*============================================= TAGS =============================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+h1 {
+    color: rgb(82, 82, 82);
+    font-family: "Gabarito", sans-serif;
+    font-style: italic;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 400px;
+}
+h2, h3, h4, h5, h6 {
+    font-family: "Gabarito", sans-serif;
+    font-weight: bold;
+    font-size: 2.188rem;
+    padding: 10px;
+    color: rgb(82, 82, 82)
+}
+
+p {
+    color: rgb(48, 48, 48);
+    font-family: "Raleway", sans-serif;
+    padding: 10px;
+}
+
+a {
+    padding: 10px;
+}
+
+label {
+    padding: 10px;
+    font-family: "Raleway", sans-serif;
+    font-size: 0.938rem;
+}
+
+input {
+    padding: 5px;
+}
+
+textarea {
+    margin-left: 10px;
+}
+
+/*============================================= CLASSES =============================================*/
+
+/*============================= CABEÇALHO =============================*/
+
+
+.fundo-header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #F4EBEE;
+    z-index: 1;
+    filter: drop-shadow(0px 1px 7px rgba(0, 0, 0, 0.24));
+}
+
+.logo-topo {
+    width: 50px;
+    position: fixed;
+    top: 25px;
+    left: 50%;
+    right: 50%;
+    z-index: 2;
+}
+
+.botao-menu-header {
+    width: 20px;
+    cursor: pointer;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.24));
+    position: fixed;
+    top: 30px;
+    left: 5%;
+    z-index: 2;
+}
+
+/*============================= SLOGAN + BACKGROUND =============================*/
+
+.background-content {
+    width: 100%;
+    height: 680px;
+    background-image: url("https://img.redbull.com/images/c_crop,x_0,y_0,h_1920,w_3840/c_fill,w_2600,h_1320/q_auto,f_jpg/redbullcom/2024/3/7/tp6xp8ljmcmfyajkadfu/esqui-alpino-lucas-braathen-austria%202560w");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -150px;
+    mask-image: linear-gradient(to top, transparent 15%, white 75%);
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    z-index: -3;
+}
+
+.slogan-content {
+    display: flex;
+    align-items: center;
+}
+
+.caixa-texto-logo {
+    width: 600px;
+    margin-left: 2.5%;
+    margin-top: 180px;
+    margin-bottom: 180px;
+    z-index: -2;
+}
+
+.arte-asas {
+    position: absolute;
+    top: 400px;
+    width: 212px;
+    z-index: -1;
+    filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.24));
+}
+
+.slogan2 {
+    color: rgb(36, 36, 36);
+    font-family: "Roboto", sans-serif;
+}
+
+.logo-principal {
+    width: 300px;
+    position: relative;
+    left: 40px;
+    bottom: 10px;
+}
+
+/*============================= CONTEUDO =============================*/
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: -3;
+    padding: 60px 0;
+}
+
+.titulo-acai {
+    color: rgb(104, 7, 104);
+}
+
+.titulo-red {
+    color: rgb(223, 19, 19);
+}
+
+.titulo-zero {
+    color: rgb(0, 154, 201);
+}
+
+.caixa-latas {
+    width: 400px;
+    height: 400px;
+    transition: 1.5s;
+}
+
+.latas-conteudo {
+    position: relative;
+    transform: rotate(10deg);
+    z-index: -3;
+    width: 100%;
+}
+
+.caixa-latas:hover {
+    transform:  translateY(-60px) rotate(-10deg);
+    filter: drop-shadow(10px 25px 10px rgba(0, 0, 0, 0.24));
+}
+
+.caixas-texto {
+    width: 750px;
+    z-index: -3;
+}
+
+.menu-latas {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.botao-lata {
+    width: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.botao-lata:hover {
+    transform: translateY(-20px);
+    filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.24));
+}
+
+/*============================= RODAPÉ =============================*/
+
+.fundo-footer {
+    width: 100%;
+    height: 125px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #000B8D;
+    z-index: -3;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-link {
+    font-family: "Raleway", sans-serif;
+    color: rgba(255, 255, 255, 0.61);
+    padding: 25px 80px 30px;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.footer-link:hover {
+    transform: translateY(-3px);
+}
+
+.copyright {
+    font-family: sans-serif;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.377);
+    text-align: center;
+    padding-top: 22px;
+}
+.github {
+    color: rgba(255, 255, 255, 0.377);
+}
+
+/*============================================= FALE CONOSCO =============================================*/
+
+.background-fale-conosco {
+    width: 100%;
+    height: 750px;
+    background-image: url("https://img.redbull.com/images/c_crop,x_0,y_333,h_1800,w_3200/c_fill,w_1250,h_735/q_auto,f_auto/redbullcom/2025/3/27/iinuomp00id0uf4jtczi/drift-masters-red-bull-race-car");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -150px;
+    mask-image: linear-gradient(to top, transparent 15%, white 75%);
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    z-index: -3;
+}    
+
+.logo-principal-fale-conosco {
+    width: 300px;
+    position: relative;
+    left: 40px;
+    bottom: 10px;
+    filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.24));
+}
+
+.fale-conosco-topo {
+    width: 100%;
+    height: 750px;
+}
+
+.fale {
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.24);
+    width: 100%;
+    font-size: 4.375rem;
+    margin-left: 2.5%;
+    z-index: -2;
+}
+
+.conosco {
+    color: rgb(255, 76, 76);
+}
+
+.contatos {
+    z-index: -3;
+    padding: 60px 0;
+}
+
+.titulo-contatos {
+    font-size: 2.813rem;
+    font-style: italic;
+    padding-bottom: 35px;
+}
+
+.numero-whatsapp {
+    display: inline-flex;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.botao-enviar {
+    background: #6b6b6b;
+    color: #ffffff;
+    border-radius: 10px;
+    border: none;
+    margin-left: 10px;
+    margin-top: 5px;
+    padding: 12px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/*================================================================================================*/
